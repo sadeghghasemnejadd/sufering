@@ -1,3 +1,6 @@
+:root {
+  --color-gray: #585858;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +11,31 @@ html {
 }
 body {
   font-size: 1.6rem;
-  padding: 3.8rem 2.5rem 9.6rem 2.5rem;
+  margin: 3.8rem 2.5rem 9.6rem 2.5rem;
+
   /* test */
   min-height: 100vh;
 }
 .content {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
+}
+.bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -9999;
+}
+.bg__container {
+  grid-column: 2/-2;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.bg__container--line {
+  height: 100%;
+  width: 0.1rem;
+  background-color: var(--color-gray);
+  opacity: 0.1;
 }
