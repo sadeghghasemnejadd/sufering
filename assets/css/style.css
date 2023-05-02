@@ -8,4 +8,11 @@ html {
 }
 body {
   font-size: 1.6rem;
+  padding: 3.8rem 2.5rem 9.6rem 2.5rem;
+  /* test */
+  min-height: 100vh;
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
 }
