@@ -2,9 +2,11 @@
   --color-gray: #585858;
   --color-gray-2: #8f8f8f;
   --color-gray-3: #ebebeb;
+  --color-gray-4: #ececec;
   --color-black: #0b0c11;
   --color-black-2: #333333;
   --color-secondary: #5da8ef;
+  --color-pink: #ce60a8;
 }
 * {
   margin: 0;
@@ -24,6 +26,7 @@ body {
 .content {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
+  padding: 3.8rem 2.5rem 9.6rem 2.5rem;
 }
 /* bg class */
 .bg {
@@ -50,7 +53,6 @@ body {
 }
 
 .main {
-  padding: 3.8rem 2.5rem 9.6rem 2.5rem;
   display: flex;
   flex-direction: column;
   gap: 15rem;
@@ -266,4 +268,125 @@ body {
   font-size: 0.9rem;
   border-bottom: #5da8ef 0.1rem solid;
   padding-bottom: 0.4rem;
+}
+
+.section__carts {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.section__carts__bg {
+  position: absolute;
+  top: -60%;
+  z-index: -99999;
+  width: 100%;
+  opacity: 0.03;
+}
+.section__carts__sub-title {
+  text-align: center;
+  color: var(--color-secondary);
+  letter-spacing: 0.01rem;
+  text-transform: uppercase;
+}
+.section__carts__title {
+  text-align: center;
+  font-size: 4.2rem;
+  font-family: "Playfair Display";
+  letter-spacing: 0.05rem;
+  color: var(--color-black);
+}
+
+.section__carts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__carts__container__chevron {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 2.5rem;
+  cursor: pointer;
+}
+.section__carts__carts-container {
+  grid-column: 2/-1;
+  display: flex;
+  gap: 3.2rem;
+}
+.section__carts__carts-container--item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.section__carts__carts-container--item--img {
+  position: relative;
+  grid-column: 1/3;
+  grid-row: 1/-1;
+}
+.section__carts__carts-container--item--img-bg {
+  width: 25rem;
+  height: 32rem;
+  background-color: var(--color-gray-4);
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+}
+.section__carts__carts-container--item--img-photo {
+  margin-top: -6.2rem;
+}
+.section__carts__carts-container--item--title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  align-self: end;
+  z-index: 1;
+  margin-left: 8.6rem;
+}
+.section__carts__carts-container--item--title--sub-title {
+  font-size: 1.2rem;
+  color: #7a7a7a;
+}
+.section__carts__carts-container--item--title--title {
+  font-size: 2.6rem;
+  color: var(--color-black);
+}
+.section__carts__carts-container--item--buy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  align-items: flex-start;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  justify-self: start;
+  margin-left: 1.6rem;
+  margin-top: 3.2rem;
+}
+.section__carts__carts-container--item--buy--price {
+  color: var(--color-pink);
+  font-family: "Poppins";
+  font-size: 2rem;
+}
+.section__carts__carts-container--item--buy--btn {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.section__carts__btn:link,
+.section__carts__btn:visited {
+  text-decoration: none;
+  color: var(--color-black);
+  padding-bottom: 0.1rem;
+  border-bottom: var(--color-secondary) 0.1rem solid;
+  font-size: 1.4rem;
+  font-family: "League Spartan";
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-self: center;
 }
