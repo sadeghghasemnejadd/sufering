@@ -3,6 +3,7 @@
   --color-gray-2: #8f8f8f;
   --color-gray-3: #ebebeb;
   --color-black: #0b0c11;
+  --color-black-2: #333333;
   --color-secondary: #5da8ef;
 }
 * {
@@ -16,6 +17,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "League Spartan";
+  position: relative;
   /* test */
   min-height: 100vh;
 }
@@ -49,6 +51,9 @@ body {
 
 .main {
   padding: 3.8rem 2.5rem 9.6rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
 }
 .section__hero {
   column-gap: 4.6rem;
@@ -167,4 +172,31 @@ body {
 }
 .section__hero__social--logos--item:hover {
   fill: var(--color-black);
+}
+
+.section__quote {
+  row-gap: 2.4rem;
+}
+.section__quote__text {
+  font-size: 2.6rem;
+  font-family: "Playfair Display";
+  grid-column: 5/11;
+  text-align: center;
+  quotes: none;
+  line-height: 3.8rem;
+  color: var(--color-black-2);
+  opacity: 0.9;
+}
+.section__quote__author {
+  grid-column: 5/11;
+  text-align: center;
+  color: var(--color-black-2);
+  opacity: 0.9;
+}
+.section__quote__line {
+  height: 10rem;
+  width: 0.1rem;
+  background-color: var(--color-secondary);
+  grid-column: 5/11;
+  margin: 0 auto;
 }
