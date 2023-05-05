@@ -585,3 +585,28 @@ body {
   padding-bottom: 0.4rem;
   font-size: 0.9rem;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  gap: 3.2rem;
+}
+.footer__list {
+  display: flex;
+  gap: 4.8rem;
+  list-style: none;
+}
+.footer__list__item a:link,
+.footer__list__item a:visited {
+  text-decoration: none;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.footer__social-logo {
+  display: flex;
+  gap: 1.6rem;
+}
