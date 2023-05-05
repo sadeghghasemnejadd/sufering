@@ -3,6 +3,7 @@
   --color-gray-2: #8f8f8f;
   --color-gray-3: #ebebeb;
   --color-gray-4: #ececec;
+  --color-gray-5: #f9f9f9;
   --color-black: #0b0c11;
   --color-black-2: #333333;
   --color-secondary: #5da8ef;
@@ -389,4 +390,89 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   align-self: center;
+}
+
+.section__ads {
+}
+.section__ads__item {
+  grid-template-rows: repeat(5, 1fr);
+}
+.section__ads__item--info {
+  grid-row: 1/-2;
+  grid-column: 2/6;
+  margin-left: 6.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.section__ads__item--info--number {
+  font-size: 13rem;
+  color: var(--color-gray-5);
+  position: absolute;
+  top: 3%;
+  z-index: -1;
+}
+.section__ads__item--info--title {
+  font-size: 4.2rem;
+  color: var(--color-black);
+  font-family: "Playfair Display";
+}
+.section__ads__item--info--title::first-letter {
+  border-bottom: var(--color-secondary) 0.4rem solid;
+}
+.section__ads__item--info--text {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  color: var(--color-gray);
+  opacity: 0.65;
+}
+.section__ads__item--info--btn:link,
+.section__ads__item--info--btn:visited {
+  text-decoration: none;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+  padding-bottom: 0.4rem;
+  align-self: flex-start;
+  border-bottom: var(--color-secondary) 0.1rem solid;
+}
+.section__ads__item--photo {
+  grid-column: 6/14;
+  grid-row: 1/-1;
+  background: url("./../images/ads-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 60rem;
+  margin-left: 6.4rem;
+  justify-self: end;
+}
+.section__ads__item--detail {
+  grid-column: 14/-1;
+  margin-left: 3.2rem;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  opacity: 0.2;
+  color: var(--color-black);
+  letter-spacing: 0.4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.section__ads__item-2 .section__ads__item--info {
+  grid-column: 9/-3;
+}
+
+.section__ads__item-2 .section__ads__item--photo {
+  grid-column: 4/9;
+  background: url("./../images/ads-2.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.section__ads__item-2 .section__ads__item--detail {
+  grid-column: 3/4;
+  justify-self: end;
+  margin-right: 3.2rem;
 }
