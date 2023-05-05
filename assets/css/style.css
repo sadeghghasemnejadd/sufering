@@ -29,6 +29,7 @@ body {
   grid-template-columns: repeat(14, 1fr);
   padding: 3.8rem 2.5rem 9.6rem 2.5rem;
 }
+
 /* bg class */
 .bg {
   display: grid;
@@ -543,4 +544,44 @@ body {
   width: 2.4rem;
   height: 2.4rem;
   stroke: #fff;
+}
+
+.section__address {
+  display: flex;
+  gap: 3.2rem;
+}
+.section__address__photo {
+  flex: 0 0 50%;
+  width: 100%;
+}
+.section__address__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6.4rem;
+}
+.section__address__info--sub-title {
+  font-family: "League Spartan";
+  color: var(--color-black);
+  text-transform: uppercase;
+  opacity: 0.27;
+  letter-spacing: 0.2rem;
+  font-size: 0.9rem;
+}
+.section__address__info--title {
+  font-family: "Playfair Display";
+  font-size: 4.2rem;
+  width: 40%;
+  margin-left: 3.2rem;
+}
+.section__address__info--btn:link,
+.section__address__info--btn:visited {
+  text-decoration: none;
+  color: var(--color-secondary);
+  letter-spacing: 0.2rem;
+  border-bottom: var(--color-secondary) 0.1rem solid;
+  text-transform: uppercase;
+  align-self: flex-start;
+  padding-bottom: 0.4rem;
+  font-size: 0.9rem;
 }
