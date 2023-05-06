@@ -1,3 +1,4 @@
+/* color variable */
 :root {
   --color-gray: #585858;
   --color-gray-2: #8f8f8f;
@@ -9,6 +10,8 @@
   --color-secondary: #5da8ef;
   --color-pink: #ce60a8;
 }
+
+/* css reset */
 * {
   margin: 0;
   padding: 0;
@@ -21,9 +24,9 @@ body {
   font-size: 1.6rem;
   font-family: "League Spartan";
   position: relative;
-  /* test */
-  min-height: 100vh;
 }
+
+/* main content */
 .content {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
@@ -54,11 +57,14 @@ body {
   opacity: 0.1;
 }
 
+/* main tag  */
 .main {
   display: flex;
   flex-direction: column;
   gap: 15rem;
 }
+
+/* hero section */
 .section__hero {
   column-gap: 4.6rem;
 }
@@ -178,6 +184,7 @@ body {
   fill: var(--color-black);
 }
 
+/* quoate section */
 .section__quote {
   row-gap: 2.4rem;
 }
@@ -205,6 +212,7 @@ body {
   margin: 0 auto;
 }
 
+/* album section */
 .section__album {
   grid-template-rows: 4.7rem 1fr repeat(2, max-content);
 }
@@ -272,6 +280,7 @@ body {
   padding-bottom: 0.4rem;
 }
 
+/* carts section */
 .section__carts {
   position: relative;
   display: flex;
@@ -298,7 +307,6 @@ body {
   letter-spacing: 0.05rem;
   color: var(--color-black);
 }
-
 .section__carts__container {
   display: flex;
   justify-content: space-between;
@@ -393,8 +401,7 @@ body {
   align-self: center;
 }
 
-.section__ads {
-}
+/* ads section */
 .section__ads__item {
   grid-template-rows: repeat(5, 1fr);
 }
@@ -478,6 +485,7 @@ body {
   margin-right: 3.2rem;
 }
 
+/* subscribe section */
 .section__subscribe {
   position: relative;
 }
@@ -546,6 +554,7 @@ body {
   stroke: #fff;
 }
 
+/* address section */
 .section__address {
   display: flex;
   gap: 3.2rem;
@@ -586,6 +595,7 @@ body {
   font-size: 0.9rem;
 }
 
+/* footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -605,7 +615,6 @@ body {
   color: var(--color-black);
   text-transform: uppercase;
 }
-
 .footer__social-logo {
   display: flex;
   gap: 1.6rem;
